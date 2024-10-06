@@ -97,9 +97,6 @@ class ExpenseController extends Controller
      *         description="Despesa não encontrada"
      *     )
      * )
-     *
-     * @param Expense $expense
-     * @return JsonResponse
      */
     public function show(Expense $expense)
     {
