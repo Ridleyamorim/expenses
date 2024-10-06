@@ -1,3 +1,13 @@
+Expense Tracker API
+
+Este projeto é uma API RESTful desenvolvida em Laravel 10 para gerenciar despesas, com funcionalidades de autenticação de usuários, proteção por token usando Laravel Sanctum, e um CRUD completo de despesas.
+
+A API usa autenticação via token gerado pelo Laravel Sanctum.
+
+Para iniciar o projeto, entre no arquivo, instale o composer e use o comando: **docker compose up**
+
+Para verificar o swagger e conferir a documentação da rota, use a rota: http://localhost:85/api/documentation
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
