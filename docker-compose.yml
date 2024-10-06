@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '85:85'
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - queue
+
+  queue:
+    image: php:8.2-cli
+    working_dir: /var/www/html
+    volumes:
+      - .:/var/www/html
+    command: php artisan queue:work
